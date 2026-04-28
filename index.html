@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Strategist Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+}
+
+p {
+  color: #aaa;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.cta {
+  margin-top: 30px;
+}
+
+.cta button {
+  padding: 12px 24px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary {
+  background: #fff;
+  color: #000;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* METRICS */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.metric h2 {
+  font-size: 2rem;
+}
+
+.metric p {
+  font-size: 0.9rem;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* VIDEO GRID */
+.video-card {
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-card img {
+  width: 100%;
+}
+
+.video-card p {
+  padding: 10px;
+}
+
+/* REELS */
+.reels {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.reel {
+  min-width: 200px;
+  height: 350px;
+  background: #222;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+/* CASE STUDY */
+.case {
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* CTA */
+.final-cta {
+  text-align: center;
+}
+
+.final-cta button {
+  margin: 10px;
+  padding: 12px 24px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>I Build Content, Brands, and Conversations That Scale.</h1>
+  <p>2M+ views. 180K+ interactions. Built content systems across reels, YouTube, and podcasts.</p>
+
+  <div class="cta">
+    <button class="primary">View Work</button>
+    <button class="secondary">Work With Me</button>
+  </div>
+
+  <p style="margin-top:20px;">Content strategist | TEDx Speaker | Brand Builder</p>
+</section>
+
+<!-- METRICS -->
+<section>
+  <div class="metrics">
+    <div class="metric">
+      <h2>2M+</h2>
+      <p>Views</p>
+    </div>
+    <div class="metric">
+      <h2>181K+</h2>
+      <p>Interactions</p>
+    </div>
+    <div class="metric">
+      <h2>716K+</h2>
+      <p>Reach</p>
+    </div>
+    <div class="metric">
+      <h2>84%</h2>
+      <p>Non-Follower</p>
+    </div>
+  </div>
+
+  <p style="margin-top:20px;">I build content that reaches people who don’t follow you—yet.</p>
+</section>
+
+<!-- CONTENT ECOSYSTEM -->
+<section>
+  <h2>Content Ecosystem</h2>
+
+  <div class="grid" style="margin-top:30px;">
+    <div class="card">
+      <h3>🔥 Short Form</h3>
+      <p>500K–700K+ views</p>
+      <p>92.8% engagement driver</p>
+    </div>
+
+    <div class="card">
+      <h3>🎬 YouTube</h3>
+      <p>10K–70K+ videos</p>
+      <p>Authority & trust</p>
+    </div>
+
+    <div class="card">
+      <h3>🎙️ Podcasts</h3>
+      <p>Industry leaders</p>
+      <p>Thought leadership</p>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO GRID -->
+<section>
+  <h2>Long-form Content</h2>
+
+  <div class="grid" style="margin-top:20px;">
+    <div class="video-card">
+      <img src="https://via.placeholder.com/400x200">
+      <p>Marketing Strategy — 70K Views</p>
+    </div>
+
+    <div class="video-card">
+      <img src="https://via.placeholder.com/400x200">
+      <p>Leadership Talk — 40K Views</p>
+    </div>
+
+    <div class="video-card">
+      <img src="https://via.placeholder.com/400x200">
+      <p>Student Series — 25K Views</p>
+    </div>
+  </div>
+</section>
+
+<!-- REELS -->
+<section>
+  <h2>Viral Reels</h2>
+
+  <div class="reels" style="margin-top:20px;">
+    <div class="reel">500K+</div>
+    <div class="reel">700K+</div>
+    <div class="reel">600K+</div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section>
+  <h2>Case Studies</h2>
+
+  <div class="case">
+    <h3>L’Attitude Growth</h3>
+    <p>2M+ views via reels-first strategy</p>
+  </div>
+
+  <div class="case">
+    <h3>Great Lakes System</h3>
+    <p>Built YouTube + podcast ecosystem</p>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section>
+  <h2>Insights</h2>
+  <p>Reels drive discovery. Long-form builds trust.</p>
+  <p>Distribution > Creation.</p>
+</section>
+
+<!-- CTA -->
+<section class="final-cta">
+  <h2>Let’s build content that actually performs.</h2>
+
+  <button class="primary">Email Me</button>
+  <button class="secondary">LinkedIn</button>
+  <button class="secondary">Instagram</button>
+</section>
+
+</body>
+</html>
